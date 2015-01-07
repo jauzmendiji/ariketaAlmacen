@@ -74,6 +74,8 @@ public static void main (String args[]) throws IOException{
 				manzana.setEurosKilo(sc.nextDouble());
 				System.out.println("Nombre del distribuidor de la manzana: ");
 				String di = sc.next();
+				System.out.println("Numero de codigo de barras: ");
+				manzana.setCod_Barras(sc.nextInt());
 				distribuman.add(di);
 				manzanas.add(manzana);
 			
@@ -91,6 +93,8 @@ public static void main (String args[]) throws IOException{
 				leche.setEurosLitro(sc.nextDouble());
 				System.out.println("Introduce el nombre del distribuidor de la leche: ");
 				String dl = sc.next();
+				System.out.println("Numero de codigo de barras: ");
+				leche.setCod_Barras(sc.nextInt());
 				distribuleche.add(dl);
 				leches.add(leche);
 			
@@ -110,6 +114,8 @@ public static void main (String args[]) throws IOException{
 				lechuga.setEurosUnidad(sc.nextDouble());
 				System.out.println("Introduce el nombre del distribuidor de la lechuga: ");
 				String dle = sc.next();
+				System.out.println("Numero de codigo de barras: ");
+				lechuga.setCod_Barras(sc.nextInt());
 				distribulechu.add(dle);
 				lechugas.add(lechuga);
 			

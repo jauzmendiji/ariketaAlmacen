@@ -1,37 +1,34 @@
 public class Direccion {
-//Declaración de variables
-	private String ciudad, calle;
-	private int  numero, cp;
 
+	//añadid las propiedades convenientes
+	private String poblacion;
+	private String localidad;
+	private String calle;
+	private int numero;
 
-//Métodos getter y setter
-	public String getCiudad() {
-		return ciudad;
+	//métodos getter y setter
+	public void setPoblacion (String pob){
+		poblacion = pob;
 	}
-	public void setCiudad(String ciud) {
-		ciudad = ciud;
+	public String getPoblacion(){
+		return poblacion;
 	}
-
-	public String getCalle() {
+	public void setLocalidad (String pueblo){
+		localidad = pueblo;
+	}
+	public String getLocalidad(){
+		return localidad;
+	}
+	public void setCalle (String cal){
+		calle = cal;
+	}
+	public String getCalle(){
 		return calle;
 	}
-	public void setCalle(String kalea) {
-		calle = kalea;
+	public void setNumero (int num){
+		numero = num;
 	}
-
-	public int getNumero() {
+	public int getNumero(){
 		return numero;
 	}
-	public void setNumero(int zenbakia) {
-		numero = zenbakia;
-	}
-
-	public int getCP() {
-		return cp;
-	}
-	public void setCP(int codP) {
-		cp = codP;
-	}
-
-
 }

@@ -1,50 +1,33 @@
 public class Contacto {
-//Declaración de variables
-	private String nombre, apellido1, apellido2, dni, mail;
-	private int telefono;
 
-//Métodos getter y setter
-	public String getNombre() {
+	//añadid las propiedades convenientes
+	private String nombre;
+	private String apellido;
+	private String email;
+	private int telefono;
+	//métodos getter y setter
+	public void setNombre (String nom){
+		nombre = nom;
+	}
+	public String getNombre(){
 		return nombre;
 	}
-
-	public void setNombre(String nom1) {
-		nombre = nom1;
+	public void setApellido (String ape){
+		apellido = ape;
 	}
-
-	public String getApellido1() {
-		return apellido1;
+	public String getApellido(){
+		return apellido;
 	}
-	public void setApellido1(String ape1) {
-		apellido1 = ape1;
+	public void setEmail (String em){
+		email = em;
 	}
-
-	public String getApellido2() {
-		return apellido2;
+	public String getEmail(){
+		return email;
 	}
-	public void setApellido2(String ape2) {
-		apellido2 = ape2;
+	public void setTelefono (int tlf){
+		telefono = tlf;
 	}
-
-	public String getDni() {
-		return dni;
-	}
-	public void setDni(String dnic) {
-		dni = dnic;
-	}
-
-	public String getMail() {
-		return mail;
-	}
-	public void setMail(String mailc) {
-		mail = mailc;
-	}
-
-	public int getTelefono() {
+	public int getTelefono(){
 		return telefono;
 	}
-	public void setTelefono(int tel) {
-		telefono = tel;
-	}
-	
 }

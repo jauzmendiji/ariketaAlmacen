@@ -1,0 +1,91 @@
+import java.util.ArrayList; 
+
+public class Cesta {
+
+//propiedades
+private Int num_cesta, kilototal, preciototal;
+private Cliente cliente;
+private Manzana manzana;
+private Lechuga lechuga;
+private Leche leche;
+
+//métodos getter y setter
+
+		public Int getNum_Cesta()
+		{
+			return num_cesta;
+		}
+		
+		public void  setNum_Cesta(Int numcesta)
+		{
+			num_cesta = numcesta;
+		}
+
+		/*public Int getKilototal()
+		{
+			return kilototal;
+		}
+		
+		public void  setKilototal(Int kilotot)
+		{
+			kilototal = kilotot;
+		}*/
+
+		public Int getPreciototal()
+		{
+			return preciototal;
+		}
+		
+		public void  setPreciototal(Int preciotot)
+		{
+			preciototal = preciotot;
+		}
+
+		public Cliente getCliente()
+		{
+			return cliente;
+		}
+		
+		public void  setCliente(Cliente client)
+		{
+			cliente = client;
+		}
+
+		public Manzanas getManzanas()
+		{
+			return manzanas;
+		}
+		
+		public void  setManzanas(Manzanas manza)
+		{
+			manzanas = manza;
+		}
+
+		public Lechuga getLechuga()
+		{
+			return lechuga;
+		}
+		
+		public void  setLechuga(Lechuga lechu)
+		{
+			lechuga = lechu;
+		}
+
+		public Leche getLeche()
+		{
+			return leche;
+		}
+		
+		public void  setLeche(Leche lech)
+		{
+			leche = lech;
+		}
+
+//método calcular importe compra
+		public Double total(Double importe, Double descuento) {
+	Double resul = importe - descuento;
+	return resul;
+ 	}
+
+
+}

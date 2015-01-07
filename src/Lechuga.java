@@ -1,60 +1,49 @@
 public class Lechuga {
 
-//propiedades
-private String tipo, procedencia, color;
-private Double eurosUnidad;
-private Distribuidor distribuidor;
+	//propiedades
+	private String tipoLechuga;
+	private String procedencia;
+	private String color;
+	private Double eurosUnidad;
+	private Distribuidor distribuidor;
+	private int cod_barras;
 
-//métodos getter y setter
-
-public String getTipo()
-		{
-			return tipo;
-		}
-		
-		public void  setTipo(String mota)
-		{
-			tipo = mota;
-		}
-
-		public String getProcedencia()
-		{
-			return procedencia;
-		}
-		
-		public void  setProcedencia(String proce)
-		{
-			procedencia = proce;
-		}
-
-		public String getColor()
-		{
-			return color;
-		}
-		
-		public void  setColor(String kolorea)
-		{
-			color = kolorea;
-		}
-
-		public Double getEurosUniad()
-		{
-			return eurosUnidad;
-		}
-		
-		public void  setEurosUnidad(Double euroUni)
-		{
-			eurosUnidad = euroUni;
-		}
-
-		public Distribuidor getDistribuidor()
-		{
-			return distribuidor;
-		}
-		
-		public void  setDistribuidor(Distribuidor distri)
-		{
-			distribuidor = distri;
-		}
+	//métodos getter y setter
+	public void setTipoLechuga (String tl){
+		tipoLechuga = tl;
+	}
+	public String getTipoLechuga(){
+		return tipoLechuga;
+	}
+	public void setProcedencia (String pro){
+		procedencia = pro;
+	}
+	public String getProcedencia(){
+		return procedencia;
+	}
+	public void setColor (String col){
+		color = col;
+	}
+	public String getColor(){
+		return color;
+	}
+	public void setEurosUnidad (Double eu){
+		eurosUnidad = eu;
+	}
+	public Double getEurosUnidad(){
+		return eurosUnidad;
+	}
+	public void setDistribuidor (Distribuidor dis){
+		distribuidor = dis;
+	}
+	public Distribuidor getDistribuidor(){
+		return distribuidor;
+	}
+	public void setCod_Barras (Integer cb){
+		cod_barras = cb;
+	}
+	public Integer getCod_Barras(){
+		return cod_barras;
+	}
 
 }

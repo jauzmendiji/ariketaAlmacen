@@ -1,55 +1,41 @@
 public class Leche {
 
-//propiedades
-private String tipo, procedencia;
-private Double eurosLitro;
-private Distribuidor distribuidor;
+	//propiedades
+	private String tipo;
+	private String procedencia;
+	private Double eurosLitro;
+	private Distribuidor distribuidor;
+	private int cod_barras;
 
-//métodos getter y setter
-
-public String getTipo()
-		{
-			return tipo;
-		}
-		
-		public void  setTipo(String mota)
-		{
-			tipo = mota;
-		}
-
-		public String getProcedencia()
-		{
-			return procedencia;
-		}
-		
-		public void  setProcedencia(String proce)
-		{
-			procedencia = proce;
-		}
-
-		
-
-		public Double getEurosLitro()
-		{
-			return eurosLitro;
-		}
-		
-		public void  setEurosLitro(Double eurolitro)
-		{
-			eurosLitro = eurolitro;
-		}
-
-		public Distribuidor getDistribuidor()
-		{
-			return distribuidor;
-		}
-		
-		public void  setDistribuidor(Distribuidor distri)
-		{
-			distribuidor = distri;
-		}
-
-
-
-
+	//métodos getter y setter
+	public void setTipo (String tip){
+		tipo = tip;
+	}
+	public String getTipo(){
+		return tipo;
+	}
+	public void setProcedencia (String pro){
+		procedencia = pro;
+	}
+	public String getProcedencia(){
+		return procedencia;
+	}
+	public void setEurosLitro (Double el){
+		eurosLitro = el;
+	}
+	public Double getEurosLitro(){
+		return eurosLitro;
+	}
+	public void setDistribuidor (Distribuidor dis){
+		distribuidor = dis;
+	}
+	public Distribuidor getDistribuidor(){
+		return distribuidor;
+	}
+	public void setCod_Barras (Integer cb){
+		cod_barras = cb;
+	}
+	public Integer getCod_Barras(){
+		return cod_barras;
+	}
 }
